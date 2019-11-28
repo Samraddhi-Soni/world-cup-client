@@ -1,0 +1,38 @@
+
+<form (ngSubmit)="Insert()">
+    <legend>Add Team</legend>
+
+    <div class="form-group">
+        <label for="Id">Id</label>
+        <input type="text" class="form-control" name="Id" id="Id" 
+        placeholder="Id" [(ngModel)]="Team.Id">
+    </div>
+    <div class="form-group">
+        <label for="Country">Country</label>
+        <input type="text" class="form-control" name="Country" id="Country" 
+        placeholder="Country" [(ngModel)]="Team.Country">
+    </div>
+
+    <div class="form-group">
+        <label for="Year">Year</label>
+        <input type="text" class="form-control" name="Year" id="Year" 
+        placeholder="Year" [(ngModel)]="Team.Year" >
+    </div>
+
+    <div class="form-group">
+        <label for="NoofTeam">NoofTeam</label>
+        <input type="text" class="form-control" name="NoofTeamId" id="NoofTeam" 
+        placeholder="NoofTeam" [(ngModel)]="Team.NoofTeam">
+    </div>
+
+    <div class="form-group">
+        <label for="Venue">Venue</label>
+        <input type="text" class="form-control" name="Venue" id="Venue" 
+        placeholder="Venue" [(ngModel)]="Team.Venue">
+    </div>
+
+
+    
+
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>

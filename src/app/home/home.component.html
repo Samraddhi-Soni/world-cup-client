@@ -1,0 +1,26 @@
+
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Country</th>
+                <th>Year</th>
+                <th>NoofTeam</th>
+                <th>Venue</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let team of teams">
+                <td>{{team.Id}}</td>
+                <td>{{team.Country}}</td>
+                <td>{{team.Year}}</td>
+                <td>{{team.NoofTeam}}</td>
+                <td>{{team.Venue}}</td>
+                <td>
+                    <a routerLink="/delete/{{team.Venue}}">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
